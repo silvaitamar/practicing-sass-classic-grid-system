@@ -24,8 +24,8 @@
 		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xl' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'xll' ) - 1 ) {
 			@content;
 		}
-	} @else if $breakpoint == xll {
-		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xll' ) ){
+	} @else if $breakpoint == xxl {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xxl' ) ){
 			@content;
 		}
 	}
