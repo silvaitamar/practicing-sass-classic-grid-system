@@ -1,0 +1,13 @@
+// Grid cols structure
+@mixin classic-grid-structure {
+	min-height: 1px;
+	@include media( md-plus ) {
+		float: left;
+		padding-left: $classic-grid-gutter / 2;
+		padding-right: $classic-grid-gutter / 2;		
+	}
+}
+
+[class^="col-"]{
+	@include classic-grid-structure;
+}

@@ -127,4 +127,12 @@ table {
     .col-12 {
       width: calc( 12 / 12 * 100% ); } }
 
+[class^="col-"] {
+  min-height: 1px; }
+  @media only screen and (min-width: 768px) {
+    [class^="col-"] {
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px; } }
+
 /*# sourceMappingURL=style.css.map */
