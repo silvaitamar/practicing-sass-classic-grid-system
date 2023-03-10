@@ -33,6 +33,21 @@
 	@include clearfix;
 }
 
-.container{
+.container {
 	@include container;
+}
+
+// Grid row
+@mixin row {
+	position: relative;
+	@include media( md-plus ) {
+		margin-left: -$classic-grid-gutter / 2;
+		margin-right: -$classic-grid-gutter / 2;		
+	}
+
+	@include clearfix;
+}
+
+.row {
+	@include row;
 }
