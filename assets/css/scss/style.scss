@@ -10,9 +10,5 @@
 // Functions
 @import 'functions';
 
-// Mixins
+// Media querie
 @import 'mixins/media-querie';
-
-div {
-	width: classic-grid( 3 );
-}
