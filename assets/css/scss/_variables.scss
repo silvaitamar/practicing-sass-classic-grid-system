@@ -1,6 +1,5 @@
-// Grid Breakpoints
-
-$grid-breakpoints: (
+// Classic Grid breakpoints
+$classic-grid-breakpoints: (
 	xs: 0,
 	sm: 576px,
 	md: 768px,
@@ -8,3 +7,16 @@ $grid-breakpoints: (
 	xl: 1200px,
 	xxl: 1400px
 );
+
+// Classic Grid containers
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px
+);
+
+// Classic Grid columns
+$classic-grid-columns: 12;
+$classic-grid-gutter: 15px;
