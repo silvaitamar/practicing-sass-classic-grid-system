@@ -1,0 +1,28 @@
+// Media querie mixin
+@mixin media( $breakpoint ) {
+	@if $breakpoint == xs {
+		@media only screen and ( max-width: map-get( $classic-grid-breakpoints, 'sm' ) - 1 ){
+			@content;
+		}
+	} @else if $breakpoint == sm {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'sm' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'md' ) - 1 ){
+			@content;
+		}
+	} @else if $breakpoint == md {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'md' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'lg' ) - 1 ){
+			@content;
+		}
+	} @else if $breakpoint == lg {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'lg' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'xl' ) - 1 ){
+			@content;
+		}
+	} @else if $breakpoint == xl {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xl' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'xll' ) - 1 ){
+			@content;
+		}
+	} @else if $breakpoint == xll {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xll' ) ){
+			@content;
+		}
+	}
+}
