@@ -7,5 +7,12 @@
 // Variables
 @import 'variables';
 
+// Functions
+@import 'functions';
+
 // Mixins
 @import 'mixins/media-querie';
+
+div {
+	width: classic-grid( 3 );
+}

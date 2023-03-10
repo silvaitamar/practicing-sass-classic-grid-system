@@ -1,0 +1,12 @@
+// Classic Grid master function
+@function classic-grid( $col, $offset: false ) {
+	$percent: $col / #{$classic-grid-columns} * 100 + '%';
+	$width: calc( #{$percent} - #{$classic-grid-gutter} );
+
+	@if $offset == offset {
+		$grid-gutter: #{$classic-grid-gutter} / 2;
+		$width: calc( #{$percent} + #{$grid-gutter} );
+	}
+
+	@return $width;
+}
