@@ -21,7 +21,7 @@
 			@content;
 		}
 	} @else if $breakpoint == xl {
-		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xl' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'xll' ) - 1 ) {
+		@media only screen and ( min-width: map-get( $classic-grid-breakpoints, 'xl' ) ) and ( max-width: map-get( $classic-grid-breakpoints, 'xxl' ) - 1 ) {
 			@content;
 		}
 	} @else if $breakpoint == xxl {
