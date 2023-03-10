@@ -6,6 +6,11 @@
 }
 
 // Create grid item classes
+/* 	=================================================================================		
+	Grid system
+	================================================================================= */
+
+/* Grid columns classes */
 @for $i from 1 through $classic-grid-columns {
 	.col-#{ $i } {
 		width: classic-grid( $i );
