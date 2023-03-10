@@ -13,6 +13,9 @@
 /* Grid columns classes */
 @for $i from 1 through $classic-grid-columns {
 	.col-#{ $i } {
-		width: classic-grid( $i );
+		width: 100%;
+		@include media( md-plus ) {
+			width: classic-grid( $i );
+		}
 	}
 }
