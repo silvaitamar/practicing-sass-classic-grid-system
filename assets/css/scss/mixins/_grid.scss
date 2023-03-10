@@ -11,3 +11,28 @@
 [class^="col-"]{
 	@include classic-grid-structure;
 }
+
+// Grid container
+@mixin container {
+	margin: 0 auto;
+	padding-left: $classic-grid-gutter / 2;
+	padding-right: $classic-grid-gutter / 2;
+	position: relative;
+	@include media( lg ) {
+		max-width: map-get( $container-max-widths, 'lg' );
+	}
+
+	@include media( xl ) {
+		max-width: map-get( $container-max-widths, 'xl' );
+	}
+
+	@include media( xxl ) {
+		max-width: map-get( $container-max-widths, 'xxl' );
+	}
+
+	@include clearfix;
+}
+
+.container{
+	@include container;
+}
