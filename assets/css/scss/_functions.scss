@@ -19,3 +19,12 @@
 		}
 	}
 }
+
+/* Grid offset classes */
+@for $i from 1 through $classic-grid-columns {
+	.offset-#{ $i } {
+		@include media( md-plus ) {
+			margin-left: classic-grid( $i );
+		}
+	}
+}
