@@ -1,2 +1,4 @@
 # Ignoring Sass cache files
 .sass-cache/
+/node_modules/
+package-lock.json
